@@ -1,0 +1,10 @@
+[25-Mar-2026 03:46:24 America/New_York] PHP Warning:  Undefined array key "nombre_completo" in /home/xygfyvca/public_html/dicen/v83/pagos.php on line 192
+[25-Mar-2026 03:46:24 America/New_York] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/xygfyvca/public_html/dicen/v83/pagos.php on line 192
+[25-Mar-2026 03:46:56 America/New_York] Verificando contrato número: 00102
+[25-Mar-2026 03:46:56 America/New_York] Resultado de la consulta: {"id":102,"numero_contrato":"00102","cliente_id":102,"plan_id":1,"fecha_inicio":"2014-12-09","fecha_fin":"2026-03-04","monto_mensual":"400.00","monto_total":"400.00","dia_cobro":5,"estado":"activo","vendedor_id":1,"notas":"null","created_at":"2024-12-06 00:00:00","updated_at":"2026-02-09 13:40:05","nombre":"VICTOR ELVIS","apellidos":"TORIBIO MEZQUITA"}
+[25-Mar-2026 03:46:56 America/New_York] Enviando respuesta: {"success":true,"cliente":{"nombre":"VICTOR ELVIS","apellidos":"TORIBIO MEZQUITA"},"contrato":{"id":102,"numero_contrato":"00102","monto_mensual":"400.00"}}
+[25-Mar-2026 10:47:43 America/New_York] PHP Warning:  Undefined variable $stmt in /home/xygfyvca/public_html/dicen/v83/editar_contrato.php on line 4
+[25-Mar-2026 10:47:43 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/xygfyvca/public_html/dicen/v83/editar_contrato.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/xygfyvca/public_html/dicen/v83/editar_contrato.php on line 4
