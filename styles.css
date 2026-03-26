@@ -1401,3 +1401,164 @@ textarea { resize: vertical; min-height: 80px; }
 .badge-suspendido { background:rgba(100,116,139,.12); color:var(--gray-500); }
 .badge-cancelado  { background:rgba(211,47,47,.12);   color:var(--red); }
 .badge-activo     { background:rgba(56,142,60,.12);   color:var(--green); }
+
+/* ============================================================
+   ESTILOS COMPARTIDOS — badges, page-header, alert-global
+   (Si ya existen NO duplicar)
+   ============================================================ */
+
+/* ── Badges estado ── */
+.badge-activo {
+    background: rgba(46,125,50,0.10);
+    color: var(--green);
+    border: 1px solid rgba(46,125,50,0.20);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.badge-suspendido {
+    background: rgba(245,127,23,0.10);
+    color: var(--amber);
+    border: 1px solid rgba(245,127,23,0.20);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.badge-cancelado, .badge-inactivo {
+    background: rgba(198,40,40,0.10);
+    color: var(--red);
+    border: 1px solid rgba(198,40,40,0.20);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.badge-secondary {
+    background: var(--gray-100);
+    color: var(--gray-500);
+    border: 1px solid var(--gray-200);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* ── Page header ── */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+.page-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.page-subtitle {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-top: 2px;
+}
+.page-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* ── Alerta global ── */
+.alert-global {
+    padding: 12px 18px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.alert-global.success {
+    background: rgba(46,125,50,0.08);
+    color: var(--green);
+    border: 1px solid rgba(46,125,50,0.20);
+}
+.alert-global.danger {
+    background: rgba(198,40,40,0.08);
+    color: var(--red);
+    border: 1px solid rgba(198,40,40,0.20);
+}
+
+/* ── Spinner ── */
+.spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--gray-200);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 40px auto;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Montos en tablas ── */
+.td-amount {
+    font-weight: 700;
+    color: var(--gray-800);
+    font-size: 13px;
+    white-space: nowrap;
+}
+.td-muted {
+    font-size: 12px;
+    color: var(--gray-500);
+}
+.td-mono {
+    font-family: monospace;
+    font-size: 13px;
+    letter-spacing: .5px;
+    color: var(--gray-700);
+}
+
+/* ── mhdr-sub (subtitle en modal) ── */
+.mhdr-sub {
+    font-size: 12px;
+    color: var(--gray-400);
+    margin-top: 2px;
+}
+
+/* ── mfooter (si usas mfooter en otros sitios) ── */
+.mfooter {
+    padding: 14px 22px;
+    border-top: 1px solid var(--gray-100);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--gray-50);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+/* ── Botón danger ── */
+.btn-danger {
+    background: var(--red-light);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition);
+}
+.btn-danger:hover { background: var(--red); }
